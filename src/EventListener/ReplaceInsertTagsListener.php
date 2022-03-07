@@ -16,7 +16,12 @@ class ReplaceInsertTagsListener
         $tag = $list[0];
         $file = isset($list[1]) ? $list[1] : false;
 
-        if($tag === 'mtime' && file_exists(Environment::get('documentRoot').'/'.$file))
+        if($tag !== 'mtime' && $file === false)
+        {
+            return false;
+        }
+
+        if(file_exists(Environment::get('documentRoot').'/'.$file))
         {
             return $file.'?'.filemtime(Environment::get('documentRoot').'/'.$file);
         }
