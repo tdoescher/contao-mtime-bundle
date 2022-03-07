@@ -1,2 +1,17 @@
-.DS_Store
+# App
+files
+web
+
+# Node.js
+.npm
+node_modules
+package-lock.json
+
+# dotenv
+.env
+
+# macOS
 .nova
+.DS_Store*
+Icon^M
+._*
