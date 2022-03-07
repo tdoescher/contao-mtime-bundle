@@ -1,0 +1,24 @@
+{
+    "name": "tdoescher/mtime-bundle",
+    "description": "Insert-Tag zum anhängen des Zeitstempel der letzten Dateiänderung an einen Dateipfad",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Torben Döscher",
+            "homepage": "https://tdoescher.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "contao/core-bundle": "^4.11"
+    },
+    "extra": {
+        "contao-manager-plugin": "tdoescher\\MtimeBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "tdoescher\\MtimeBundle\\": "src/"
+        }
+    }
+}
