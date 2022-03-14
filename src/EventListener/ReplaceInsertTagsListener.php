@@ -26,6 +26,6 @@ class ReplaceInsertTagsListener
             return $file.'?'.filemtime(Environment::get('documentRoot').'/'.$file);
         }
 
-        return false;
+        return $file;
     }
 }
