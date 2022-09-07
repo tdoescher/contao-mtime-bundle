@@ -3,7 +3,7 @@
 namespace tdoescher\MtimeBundle\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
-use Environment;
+use Contao\Environment;
 
 /**
  * @Hook("replaceInsertTags")
