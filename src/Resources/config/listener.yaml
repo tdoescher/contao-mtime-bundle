@@ -1,3 +1,5 @@
 services:
-    tdoescher\MtimeBundle\EventListener\ReplaceInsertTagsListener:
-        autoconfigure: true
+  _defaults:
+    autoconfigure: true
+
+  tdoescher\MtimeBundle\EventListener\ReplaceInsertTagsListener: ~
