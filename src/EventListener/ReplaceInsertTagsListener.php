@@ -11,19 +11,19 @@
 
 namespace tdoescher\MtimeBundle\EventListener;
 
-use Contao\CoreBundle\ServiceAnnotation\Hook;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\Environment;
 
  #[AsHook('replaceInsertTags', priority: 100)]
 class ReplaceInsertTagsListener
 {
-  public function __invoke(string $tag)
+  public function __invoke(string $insertTag)
   {
-    $list = explode('::', $tag);
-    $tag = $list[0];
+    $list = explode('::', $insertTag);
+    $insertTag = $list[0];
     $file = isset($list[1]) ? $list[1] : false;
 
-    if($tag !== 'mtime' || $file === false)
+    if($insertTag !== 'mtime' || $file === false)
     {
       return false;
     }
