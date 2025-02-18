@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=8.0",
-        "contao/core-bundle": "^4.13 || >=5.0 <5.4"
+        "contao/core-bundle": "^4.13 || <5.4.*"
     },
     "extra": {
         "contao-manager-plugin": "tdoescher\\MtimeBundle\\ContaoManager\\Plugin"
